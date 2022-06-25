@@ -1,0 +1,12 @@
+.titulo{
+    color:deeppink;
+    text-align: center;
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
