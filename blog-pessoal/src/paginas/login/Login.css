@@ -1,0 +1,28 @@
+.textos1{
+    font-weight: bold !important;
+ }
+
+/*
+.MuiFormLabel-root{
+    color: #ffffff!important;
+    font-weight: bold!important;
+}
+*/
+
+.button {
+    background-color: #A903C4!important;
+}
+
+.imagem{
+     background-image: url(https://i.imgur.com/ZEPihfD.png);
+     background-repeat: no-repeat;
+     margin-top: 10px;
+     width: 100vh;
+     min-height: 100vh;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+.text-decorator-none{
+    text-decoration: none;
+}

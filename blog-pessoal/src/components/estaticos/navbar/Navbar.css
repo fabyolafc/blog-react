@@ -1,0 +1,12 @@
+.cor {
+    background-color: #A903C4;
+}
+
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
