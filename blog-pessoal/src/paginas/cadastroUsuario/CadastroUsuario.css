@@ -1,0 +1,28 @@
+.imagem2{
+    background-image: url(https://i.imgur.com/ZEPihfD.png);
+    background-repeat: no-repeat;
+    margin-top: 10px!important;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.textos2{
+    font-weight: bold !important;
+}
+
+.button2 {
+    background: #6a7dfe; background: -webkit-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: -o-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: -moz-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+}
+
+.btnCancelar{
+    margin-right: 20px !important;
+    background: #6a7dfe; background: -webkit-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: -o-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: -moz-linear-gradient(to left, #21d4fd, #b721ff); 
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+}
