@@ -32,7 +32,7 @@ function Footer() {
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
                         </Box>
                         <Box>
-                            <a className='textoCor' target="_blank" href="https://github.com/fabyolafc">
+                            <a className='text-decorator-none' target="_blank" href="https://github.com/fabyolafc">
                                 <Typography variant="subtitle2" gutterBottom className='textos' align="center">Fabyola Campos</Typography>
                             </a>
                         </Box>
