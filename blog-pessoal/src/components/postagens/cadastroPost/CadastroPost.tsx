@@ -107,7 +107,7 @@ function CadastroPost() {
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
-                <FormControl >
+                <FormControl>
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
