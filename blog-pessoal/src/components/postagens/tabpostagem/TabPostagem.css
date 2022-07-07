@@ -1,10 +1,7 @@
 .titulo{
-    font-weight: bold;
+    font-weight: bold!important;
  }
 
 .corDeFundo {
-    background: #A903C4; background: -webkit-linear-gradient(to left, #21d4fd, #b721ff); 
-    background: -o-linear-gradient(to left, #21d4fd, #b721ff); 
-    background: -moz-linear-gradient(to left, #21d4fd, #b721ff); 
-    background: linear-gradient(to left, #21d4fd, #b721ff);
+    background: #141212!important;
 }

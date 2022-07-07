@@ -1,21 +1,10 @@
-.caixa{
-    background-color: #221d1d;
+.topo{
+    margin-top: 20px;
 }
 
-.titulo{
-   color: white !important;
-   font-weight: bold !important;
-}
-
-.botao{
-    border-color: white !important;
-    color: white !important;
+.button {
     background: #6a7dfe; background: -webkit-linear-gradient(to left, #21d4fd, #b721ff); 
     background: -o-linear-gradient(to left, #21d4fd, #b721ff); 
     background: -moz-linear-gradient(to left, #21d4fd, #b721ff); 
     background: linear-gradient(to left, #21d4fd, #b721ff);
-}
-
-.postagens{
-    background-color: white;
 }

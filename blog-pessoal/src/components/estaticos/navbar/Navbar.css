@@ -2,6 +2,14 @@
     background-color: #A903C4;
 }
 
+.menuBar {
+    padding-left: 35px;
+}
+
+.MuiTypography-h6 {
+    font-size:  1.2rem!important;
+}
+
 .cursor{
     cursor: pointer;
     color: white;
