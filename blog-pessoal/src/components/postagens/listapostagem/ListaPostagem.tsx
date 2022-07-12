@@ -11,16 +11,17 @@ import { useSelector } from 'react-redux';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
+
   let navigate = useNavigate();
+
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
 
   useEffect(() => {
-    if (token == "") {
+    if (token == '') {
       alert("Você precisa estar logado")
-      navigate("/login")
-
+      navigate('/login')
     }
   }, [token])
 
@@ -33,9 +34,7 @@ function ListaPostagem() {
   }
 
   useEffect(() => {
-
     getPost()
-
   }, [posts.length])
 
   return (
@@ -55,7 +54,13 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
+                  Tema: {post.tema?.descricao}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Postado por: {post.usuario?.nome}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.data}
                 </Typography>
               </CardContent>
               <CardActions>

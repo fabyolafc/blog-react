@@ -1,12 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroPost.css';
-import {useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import User from '../../../models/User';
 
 function CadastroPost() {
     let navigate = useNavigate();
@@ -14,32 +15,46 @@ function CadastroPost() {
     const [temas, setTemas] = useState<Tema[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     useEffect(() => {
         if (token == "") {
             alert("Você precisa estar logado")
-            navigate("/login")
-
+            navigate('/login')
         }
     }, [token])
 
-    const [tema, setTema] = useState<Tema>(
-        {
-            id: 0,
-            descricao: ''
-        })
+    const [tema, setTema] = useState<Tema>({
+        id: 0,
+        descricao: ''
+    })
+
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
-        tema: null
+        data: '',
+        tema: null,
+        usuario: null
     })
 
-    useEffect(() => { 
+    const userId = useSelector<TokenState, TokenState['id']>(
+        (state) => state.id
+    )
+
+    const [usuario, setUsuario] = useState<User>({
+        id: +userId,
+        nome: '',
+        usuario: '',
+        senha: '',
+        foto: ''
+    })
+
+    useEffect(() => {
         setPostagem({
             ...postagem,
-            tema: tema
+            tema: tema,
+            usuario: usuario
         })
     }, [tema])
 
@@ -79,6 +94,7 @@ function CadastroPost() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
 
+
         if (id !== undefined) {
             put(`/postagens`, postagem, setPostagem, {
                 headers: {
@@ -102,7 +118,7 @@ function CadastroPost() {
         navigate('/posts')
     }
 
- 
+
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit} >
@@ -110,7 +126,7 @@ function CadastroPost() {
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
-                <FormControl>
+                <FormControl fullWidth variant='filled'>
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
