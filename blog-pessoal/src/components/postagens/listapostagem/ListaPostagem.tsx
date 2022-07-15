@@ -70,7 +70,7 @@ function ListaPostagem() {
                   Postado por: {post.usuario?.nome}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.data}
+                  {new Date(post.data).toLocaleDateString()} as {new Date(post.data).toLocaleTimeString()}
                 </Typography>
               </CardContent>
               <CardActions>
