@@ -179,4 +179,4 @@ function CadastroPost() {
         </Container>
     )
 }
-export default CadastroPost;
+export default CadastroPost
