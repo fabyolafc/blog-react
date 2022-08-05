@@ -34,7 +34,7 @@ function Home() {
   }, [token])
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixaHome'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>

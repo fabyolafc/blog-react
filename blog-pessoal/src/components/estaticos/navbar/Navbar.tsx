@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
@@ -6,8 +7,25 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import './Navbar.css';
+import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
+}));
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -30,6 +48,23 @@ function Navbar() {
         });
         navigate('/login')
     }
+
+    const classes = useStyles();
+    const [auth, setAuth] = React.useState(true);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+
+    const handleChange = (event: any) => {
+        setAuth(event.target.checked);
+    };
+
+    const handleMenu = (event: any) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     var navbarComponent;
 
@@ -72,14 +107,52 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Link>
-                    <Box mx={1} className='cursor' onClick={goLogout}>
-                        <Typography variant="h6" color="inherit">
-                            Logout
-                        </Typography>
-                    </Box>
-
                 </Box>
 
+                {auth && (
+                    <div className='iconButton'>
+                        <IconButton
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenu}
+                            color="inherit"
+                        >
+                            <AccountCircle className='icon'/>
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+
+                            open={open}
+                            onClose={handleClose}
+                        >
+                            <Link to='/perfil' className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Perfil</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to='/config' className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Configurações</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Box mx={1} className='cursor' onClick={goLogout}>
+                                <Typography variant="h6" color="inherit">
+                                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                </Typography>
+                            </Box>
+                        </Menu>
+                    </div>
+                )}
             </Toolbar>
         </AppBar>
     }

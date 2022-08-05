@@ -4,7 +4,7 @@ import './CadastroPost.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post, put } from '../../../services/Service';
+import { busca, buscaId, post, put} from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import User from '../../../models/User';

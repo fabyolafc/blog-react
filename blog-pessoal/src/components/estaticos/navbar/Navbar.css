@@ -1,5 +1,7 @@
 .cor {
     background-color: #A903C4;
+}.teste{
+    display: flex;
 }
 
 .menuBar {
@@ -8,6 +10,7 @@
 
 .MuiTypography-h6 {
     font-size:  1.2rem!important;
+    margin-top: 5px!important;
 }
 
 .cursor{
@@ -17,4 +20,13 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.iconButton {
+    color: white!important;
+    margin-left: 648px!important;
+}
+
+.icon {
+    color: white!important;
 }

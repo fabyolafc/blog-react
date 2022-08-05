@@ -1,0 +1,17 @@
+.titulo-tema {
+    margin-bottom: 5px;
+}
+.btnModal {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+
+.caixa{
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.iconsPerfil {
+    display: flex;
+}
