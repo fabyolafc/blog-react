@@ -145,7 +145,8 @@ function Perfil() {
     return(
         <>
           <Box className="profileImageContainer">
-            {users.foto ? <img className="profileImage" src={ users.foto } alt={users.nome} /> : <img className='profileImage' src={endImg}/>}
+            <img src={users.foto} alt={users.nome} width="200" height="200" className='foto-user' />
+            {/*{users.foto ? <img className="profileImage" src={ users.foto } alt={users.nome} /> : <img className='profileImage' src={endImg}/>}*/}
             <Typography className="profile-name">{users.nome}</Typography>
             <Typography className="profile-email">{users.usuario}</Typography>
             <hr className='linha-perfil' />

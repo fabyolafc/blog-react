@@ -91,7 +91,7 @@
     background: -o-linear-gradient(to left, #21d4fd, #b721ff); 
     background: -moz-linear-gradient(to left, #21d4fd, #b721ff); 
     background: linear-gradient(to left, #21d4fd, #b721ff);
-    color: black!important;
+    color: rgb(255, 255, 255)!important;
     margin-top: 10px!important;
     border-radius: 30px!important;
     margin-bottom: 12px!important;
