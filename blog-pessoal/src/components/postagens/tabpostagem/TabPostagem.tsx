@@ -33,7 +33,7 @@ function TabPostagem() {
             <Box className='image'></Box>
 
             <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
-              Olá, meu nome é Fabyola Campos, Sou uma Desenvolvedora Fullstack, que vive no estado de Minas Gerais, Brasil.<br></br>
+              Olá, meu nome é Fabyola Campos, sou uma Desenvolvedora Java FullStack, que vive no estado de Minas Gerais, Brasil.<br></br>
               Meu espírito aventureiro, me levou a fazer parte da primeira turma de guarda mirim da minha cidade, o que me proporcionou a experiência de ter o meu primeiro emprego de jovem aprendiz como auxiliar de recepção.<br></br>
               A minha paixão pela tecnologia veio através do curso do #OTechTaOn, onde aprendi Front-end aplicando no desenvolvimento de uma landing page. Gosto de novas experiências e de novos desafios, conhecimento é a minha chave para o sucesso!<br></br><br></br>
               Em 2022 foi uma ano de muitas conquistas!<br></br>
