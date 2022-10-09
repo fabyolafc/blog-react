@@ -87,7 +87,7 @@ function Login() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className='back-login'>
-            <Grid alignItems='center' md={6} xs={12}>
+            <Grid alignItems='center' sm={6} xs={12}>
                 <Box paddingX={20}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
@@ -109,7 +109,7 @@ function Login() {
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className='imagem'>
+            <Grid sm={6} xs={12} className='imagem'>
 
             </Grid>
         </Grid>
