@@ -35,7 +35,7 @@ function Home() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
-                <Grid item alignItems="center" md={6} xs={12} className='back-home'>
+                <Grid item alignItems="center" sm={6} xs={12} className='back-home'>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo2'>Seja bem vindo(a)!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo2'>expresse aqui os seus pensamentos e opiniões!</Typography>
@@ -49,7 +49,7 @@ function Home() {
                         </Link>
                     </Box>
                 </Grid>
-                <Grid item alignItems="center" md={6} xs={12} className='back-home2'>
+                <Grid item alignItems="center" sm={6} xs={12} className='back-home2'>
                     <img src="https://i.imgur.com/gQhrVbc.png" alt="imagem da home" width="410px" height="410px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
