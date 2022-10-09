@@ -133,11 +133,11 @@ function AtualizaUsuario() {
 
                         <TextField value={user.nome} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' variant='outlined' placeholder='Insira o seu nome' name='nome' margin='normal' fullWidth />
 
-                        <TextField value={user.foto} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto' placeholder='link da foto' variant='outlined' name='foto' margin='normal' fullWidth />
+                        <TextField value={user.foto} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto' placeholder='Insira o link da foto' variant='outlined' name='foto' margin='normal' fullWidth />
 
-                        <TextField value={user.senha} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' variant='outlined' placeholder='insirir senha' name='senha' margin='normal' type='password' fullWidth />
+                        <TextField value={user.senha} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' variant='outlined' placeholder='Insira a sua senha' name='senha' margin='normal' type='password' fullWidth />
 
-                        <TextField value={confirmarSenha} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' placeholder='confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        <TextField value={confirmarSenha} className='inputAtualiza' onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' placeholder='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to="/perfil" className='text-decorator-none'>
@@ -145,7 +145,7 @@ function AtualizaUsuario() {
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type='submit' variant='contained' color='primary' className='btnEdit'>
+                            <Button type='submit' variant='contained' color='primary' className='btnEdit btnEdit2'>
                                 Atualizar
                             </Button>
                         </Box>

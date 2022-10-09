@@ -109,14 +109,14 @@ function CadastroUsuario() {
         === : op. idêntico (valor === 9.0)
     */
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} className='imagem2'></Grid>
-            <Grid item xs={6} alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='back-cadastro'>
+            <Grid item sm={6} xs={12} className='imagem2'></Grid>
+            <Grid item sm={6} xs={12} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
-                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' placeholder='Insira o seu E-mail' name='usuario' margin='normal' fullWidth />
                         <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto' label='Foto' variant='outlined' placeholder='Insira o link da foto' name='foto' margin='normal' fullWidth/>
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />

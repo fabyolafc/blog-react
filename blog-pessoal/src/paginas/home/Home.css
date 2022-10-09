@@ -1,11 +1,36 @@
-.caixaHome{
-    background-color: #d980d4;
+.back-home {
+    width: 80vw;
+    height: 80vh;
+    padding-top: 10px !important;
+    padding-top: 8rem !important;
+    background-image: url(https://i.imgur.com/wndZNPf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back-home2 {
+    width: 80vw;
+    height: 80vh;
+    background-image: url(https://i.imgur.com/wndZNPf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*https://i.imgur.com/VgAcirW.jpg
+    https://i.imgur.com/qMxwfrq.png
+    https://i.imgur.com/xE5U1ZY.png
+    https://i.imgur.com/NmyQEZ9.png
+    https://img.freepik.com/vetores-premium/flores-roxas-em-um-fundo-branco-padrao-sem-costura-delicado-aquarela_542692-12.jpg?w=2000*/
 }
 
 .titulo{
-   color: white !important;
+   color: rgb(255, 255, 255) !important;
    font-weight: bold !important;
 }
+
+.titulo2{
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold !important;
+    /*text-shadow: 2px -2px 3px rgb(243, 126, 243);*/
+ }
 
 .botao{
     border-color: white !important;

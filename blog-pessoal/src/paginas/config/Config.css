@@ -10,7 +10,7 @@
 #caixaDados{
     background-color: var(--subTomBg);
     border-radius: 20px;
-    
+    margin-left: 10px!important;   
 }
 .caixa-foto {
     display: flex;
@@ -93,11 +93,16 @@
     background: linear-gradient(to left, #21d4fd, #b721ff);
     color: rgb(255, 255, 255)!important;
     margin-top: 10px!important;
-    border-radius: 30px!important;
+    border-radius: 5px!important;
     margin-bottom: 12px!important;
     padding: 10px;
     margin-right: 10px;
 }
+
+.btnEdit2 {
+    margin-left: 20px!important;
+}
+
 .btnEdit:hover {
     background-color: var(--BodyBg);
     cursor: pointer;
@@ -116,7 +121,12 @@
 #nome{
     border-radius: 5px;
     background: rgba(255, 255, 255, 1)!important;
-  }
+}
+
+#usuario{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1)!important;
+}
 
 #foto{
     border-radius: 5px;
@@ -126,7 +136,7 @@
 #senha{
     border-radius: 5px;
     background: rgba(255, 255, 255, 1)!important;
-  }
+}
 
 #confirmarSenha{
     border-radius: 5px;

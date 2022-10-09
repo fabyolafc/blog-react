@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       maxWidth: 550,
-      marginLeft: "450px",
+      marginLeft: "10px",
       marginBottom: "30px"
     },
     media: {

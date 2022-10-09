@@ -33,13 +33,13 @@ function TabPostagem() {
             <Box className='image'></Box>
 
             <Typography variant="body1" gutterBottom color="textPrimary" align="justify">
-              Olá, meu nome é Fabyola Campos, sou uma Desenvolvedora Java FullStack, que vive no estado de Minas Gerais, Brasil.<br></br>
-              Meu espírito aventureiro, me levou a fazer parte da primeira turma de guarda mirim da minha cidade, o que me proporcionou a experiência de ter o meu primeiro emprego de jovem aprendiz como auxiliar de recepção.<br></br>
+              Olá, meu nome é Fabyola Campos sou uma Desenvolvedora Java FullStack, que vive no estado de Minas Gerais, Brasil.<br></br>
+              Meu espírito aventureiro me levou a fazer parte da primeira turma de guarda mirim da minha cidade, o que me proporcionou a experiência de ter o meu primeiro emprego de jovem aprendiz como auxiliar de recepção.<br></br>
               A minha paixão pela tecnologia veio através do curso do #OTechTaOn, onde aprendi Front-end aplicando no desenvolvimento de uma landing page. Gosto de novas experiências e de novos desafios, conhecimento é a minha chave para o sucesso!<br></br><br></br>
-              Em 2022 foi uma ano de muitas conquistas!<br></br>
+              Em 2022, foi uma ano de muitas conquistas!<br></br>
               <StarBorderIcon/>Fui aprovada para estudar Análise e Desenvolvimento de Sistemas no Instituto Federal do Norte de Minas Gerais,  Campus Araçuai.<br></br>
-              <StarBorderIcon/>Tive a oportunidade de fazer parte da Generation em um bootcamp, desenvolvendo habilidades técnicas e aperfeiçoando minhas habilidades comportamentais como comunicação, trabalho em equipe, colocando tudo em prática nos trabalhos em grupos e no projeto integrador que foi a construção da rede social Sustenta+ atrelada a ODS 11 da ONU.<br></br>
-              E para encerrar, deixo a frase que me define: "Conhecimento é o segredo de um futuro brilhante. Lembre-se disso quando pensar em desistir."
+              <StarBorderIcon/>Tive a oportunidade de fazer parte da Generation em um bootcamp, desenvolvendo habilidades técnicas e aperfeiçoando minhas habilidades comportamentais como comunicação e trabalho em equipe, colocando tudo em prática nos trabalhos em grupos e no projeto integrador que foi a construção da rede social Sustenta+ atrelada a ODS 11 da ONU.<br></br>
+              E para encerrar, deixo a frase que me define: "Conhecimento é o segredo de um futuro brilhante. Lembre-se disso quando pensar em desistir".
             </Typography>
           </Grid>
 

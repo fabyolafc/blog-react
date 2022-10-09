@@ -1,10 +1,16 @@
-.imagem2{
-    background-image: url(https://i.imgur.com/ZEPihfD.png);
-    background-repeat: no-repeat;
-    margin-top: 10px!important;
-    width: 100vh;
+.back-cadastro{
+    width: 100vw;
     min-height: 100vh;
+    background-image: url(https://i.imgur.com/wDR7tZt.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagem2{
+    background-image: url(https://i.imgur.com/y6uAOGC.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
     background-position: center;
 }
 

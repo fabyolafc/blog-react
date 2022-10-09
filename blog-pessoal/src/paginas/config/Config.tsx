@@ -119,7 +119,7 @@ function Config() {
             
             <Grid container className="grid-maior" >
 
-                <Grid xs={4} justifyContent='center' alignItems="center">
+                <Grid md={6} xs={12} justifyContent='center' alignItems="center">
                     <form className='form-perfil'>
                         <Box className='caixa-foto' width={280} height={300}>
                             <img src={users.foto} alt={users.nome} width="200" height="200" className='foto-user' />
@@ -128,7 +128,7 @@ function Config() {
                     </form>
                 </Grid>
 
-                <Grid xs={1} justifyContent='center' alignItems="center">
+                <Grid md={6} xs={12} justifyContent='center' alignItems="center">
                     <Box width={300} height={400} id='caixaDados'>
                         <Typography className="user-titulo">Dados do Usuário</Typography>
                         <hr />

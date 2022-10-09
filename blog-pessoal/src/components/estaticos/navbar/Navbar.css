@@ -1,22 +1,20 @@
 .cor {
-    background-color: #440746;
+    background-color: #000000!important;
     /*background-color: #A903C4;*/
-}.teste{
-    display: flex;
 }
 
 .menuBar {
-    padding-left: 35px;
+    padding-right: 30px;
 }
 
 .MuiTypography-h6 {
-    font-size:  1.2rem!important;
-    margin-top: 5px!important;
+    font-size:  1.1rem!important;
+    margin-top: 3px!important;
 }
 
 .cursor{
     cursor: pointer;
-    color: white;
+    color: white!important;
 }
 
 .text-decorator-none{
@@ -25,7 +23,7 @@
 
 .iconButton {
     color: white!important;
-    margin-left: 648px!important;
+    /*margin-left: 647px!important;*/
 }
 
 .icon {
