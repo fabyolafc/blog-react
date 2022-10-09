@@ -79,39 +79,12 @@ function Navbar() {
             <Toolbar variant="dense" className='cor'>
 
             <LocalFloristIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-                <Box className='cursor menuBar'>
-                    <Typography variant="h5" color="inherit">
+                <Typography variant="h5" color="inherit" className={classes.title}>
+                    <Box className='cursor menuBar'>
                         FABY BLOG
-                    </Typography>
-                </Box>
-                <Typography variant="h6">
-                    <Link to="/home" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            Home
-                        </Box>
-                    </Link>
+                    </Box>
                 </Typography>
-                <Typography variant="h6" >
-                    <Link to="/posts" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            Postagens
-                        </Box>
-                    </Link>
-                </Typography>
-                <Typography variant="h6">
-                    <Link to="/temas" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            Temas
-                        </Box>
-                    </Link>
-                </Typography>
-                <Typography variant="h6" className={classes.title}>
-                    <Link to="/formularioTema" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            Cadastrar Tema
-                        </Box>
-                    </Link>
-                </Typography>
+            
 
                 {auth && (
                     <div>
@@ -139,6 +112,34 @@ function Navbar() {
                             open={open}
                             onClose={handleClose}
                         >
+                            <Link to="/home" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Home</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to="/posts" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Postagens</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to="/temas" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Temas</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
+                            <Link to="/formularioTema" className="text-decorator-none">
+                                <Box mx={1} className='cursor'>
+                                    <Typography variant="h6" color="inherit">
+                                        <MenuItem onClick={handleClose}>Cadastrar Tema</MenuItem>
+                                    </Typography>
+                                </Box>
+                            </Link>
                             <Link to='/perfil' className="text-decorator-none">
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6" color="inherit">
