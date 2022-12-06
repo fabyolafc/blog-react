@@ -88,7 +88,7 @@ function Login() {
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className='back-login'>
             <Grid alignItems='center' sm={6} xs={12}>
-                <Box paddingX={20}>
+                <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' placeholder='Insira o seu E-mail' name='usuario' margin='normal' fullWidth />
