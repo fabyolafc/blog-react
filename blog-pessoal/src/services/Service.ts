@@ -1,8 +1,10 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: 'https://blog-projeto.herokuapp.com'
+    baseURL: 'https://blogdothiagofaccipieri.onrender.com'
 })
+/*https://blog-projeto.herokuapp.com 
+https://bloggeneration.herokuapp.com*/
 
 export const cadastroUsuario = async (url: any, dados: any, setDado: any) => {
     const resposta = await api.post(url, dados)
